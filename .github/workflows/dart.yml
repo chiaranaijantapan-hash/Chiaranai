@@ -1,33 +1,29 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Dart
+name: APK-build
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: ckeckout
+      - name: Checkout source
         uses: actions/checkout@v4
 
-      - name: Install flutter
-        run: subosito/flutter-action@v2
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
         with:
           flutter-version: "3.10.7"
-    
-      -  name: Build APK
+
+      - name: Build APK
         run: flutter build apk --release
 
       - name: Upload APK
-        uses: actions/upload-artifacts@v4
+        uses: actions/upload-artifact@v4
         with:
+          name: j
           path: build/app/outputs/flutter-apk/app-release.apk
