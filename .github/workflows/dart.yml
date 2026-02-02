@@ -17,7 +17,7 @@ jobs:
 
     steps:
       - name: ckeckout
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Install flutter
         run: subosito/flutter-action@v2
