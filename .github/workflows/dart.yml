@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: ckeckout
       - uses: actions/checkout@v4
 
       - name: Install flutter
