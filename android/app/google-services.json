@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "545877331566",
+    "project_id": "foodshop-b4cb8",
+    "storage_bucket": "foodshop-b4cb8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545877331566:android:d9885080b8edcdb557a07f",
+        "android_client_info": {
+          "package_name": "com.example.untitled"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsTDGCBET1LM0_X4cIoyMslThOWQojrDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:545877331566:android:c19cdafa31fe2c1a57a07f",
+        "android_client_info": {
+          "package_name": "com.foodshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsTDGCBET1LM0_X4cIoyMslThOWQojrDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
